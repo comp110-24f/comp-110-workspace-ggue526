@@ -1,11 +1,11 @@
 """EX02 - Chardle - A cute step toward Wordle."""
 
-__author__ = 730812817
+__author__ = "730812817"
 
 
 def input_word() -> str:
     # Asks the user to input a 5-letter word
-    user_word: str = input("Enter a 5-letter word: ")
+    user_word: str = input("Enter a 5-character word: ")
     # if input isn't 5 chars long, then error and exit
     if len(user_word) != 5:
         print("Error: Word must contain 5 characters.")
