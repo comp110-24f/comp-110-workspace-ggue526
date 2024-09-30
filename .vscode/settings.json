@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./CQs/cq04",
+        "./CQs/cq04",
+        "./CQs/cq04"
+    ]
+}
