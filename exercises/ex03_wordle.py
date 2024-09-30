@@ -74,11 +74,13 @@ def main(secret: str) -> None:
         # and see if they've got it right
         if current_guess == ("\U0001F7E9" * len(secret)):
             print(f"You won in {round}/6 turns!")
-            # can't forget to exit :D
-            exit()
+            # changed to break for autograder
+            break
         # inc prog
         round += 1
-    print("X/6 - Sorry, try again tomorrow!")
+    # if statement for autograder, should always run after while loop anyways.
+    if round >= 7:
+        print("X/6 - Sorry, try again tomorrow!")
 
 
 if __name__ == "__main__":
