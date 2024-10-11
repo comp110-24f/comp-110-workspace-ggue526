@@ -5,6 +5,9 @@ __author__ = "730812817"
 
 # Checks if all elements of num_list are num
 def all(num_list: list[int], num: int) -> bool:
+    if len(num_list) == 0:
+        return False
+
     count: int = 0
     while count < len(num_list):
         if num_list[count] != num:
@@ -20,7 +23,7 @@ def max(num_list: list[int]) -> int:
         raise ValueError("max() arg is an empty List")
 
     count: int = 0
-    biggest_num: int = 0
+    biggest_num: int = num_list[count]
     while count < len(num_list):
         # checks each index against biggest_num
         if num_list[count] > biggest_num:
