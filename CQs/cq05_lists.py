@@ -7,12 +7,11 @@ def manual_append(the_list: list[int], num: int) -> None:
     the_list.append(num)
 
 
-def double(the_list: list[int]) -> list[int]:
+def double(the_list: list[int]) -> None:
     count: int = 0
     while count < len(the_list):
         the_list[count] *= 2
         count += 1
-    return the_list
 
 
 list_1: list[int] = [1, 2, 3]
